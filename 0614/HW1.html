@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8/">
+        <title>0614HW1</title>
+    </head>
+    <body bgcolor="#d0ffee">
+        <div align="center"><img src="profile1.jpg"/></div>
+        <form>
+            <fieldset>
+                <legend>個人資料</legend>
+                <a>姓&nbsp;&nbsp;名 : <input type="test" name="userName" size="10"/></a>
+                <br/>
+                <a>姓&nbsp;&nbsp;別 :<input type="radio" name="sex" value="1" />男性<input type="radio" name="sex" value="0"/>女性</a>
+                <br/>
+                <a>最高學歷:
+                    <select name="useredu[]" size="4">
+                        <option value="高中以下" >高中以下</option>
+                        <option value="大專院校">大專院校</option>
+                        <option value="碩士">碩士</option>
+                        <option value="博士">博士</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </a>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>其他資訊</legend>
+                <a>您喜歡下列哪些活動(可複選)
+                    <input type="checkbox" name="useract[]" value="閱讀" />閱讀
+                    <input type="checkbox" name="useract[]" value="打球"/>打球
+                    <input type="checkbox" name="useract[]" value="逛街"/>逛街
+                    <input type="checkbox" name="useract[]" value="聽音樂"/>聽音樂
+                    <input type="checkbox" name="useract[]" value="水上運動"/>水上運動
+                    <input type="checkbox" name="useract[]" value="旅行"/>旅行
+                </a>
+                <br/>
+                <a>您對於使用臉書經營社群有何看法?<br/><textarea name="usersug" cols="45" rows="4"></textarea></a>
+            </fieldset>
+            <br/>
+            <input type="submit" value="傳送資料"/>
+            <input type="reset" value="清除資料"/>
+        </form>
+    </body>
+</html>

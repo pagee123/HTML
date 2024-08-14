@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+        [class^="col"]{
+            background-color: #e1e1e1;
+            border: 1px solid #c2c2c2;
+            height:100px;
+        }
+        .row{
+            background-color: #c2c2c2;
+            margin: 10px;
+        }
+        .smaller{
+            height:75px;
+        }
+        .bigger{
+            height:125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="">
+        <div class="row justify-content-center align-items-start">
+           <div class="col-2 smaller">A</div>
+           <div class="col-2 bigger">B</div>
+           <div class="col-2 ">C</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+           <div class="col-2 smaller">A</div>
+           <div class="col-2 bigger">B</div>
+           <div class="col-2 ">C</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-end">
+           <div class="col-2 smaller">A</div>
+           <div class="col-2 bigger">B</div>
+           <div class="col-2 ">C</div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

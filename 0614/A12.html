@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8/">
+        <title>form</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>個人資料</legend>
+                <p>姓&nbsp;&nbsp;名 : <input type="test" name="userName" size="50" required/> 必填</p>
+                <p>公&nbsp;&nbsp;司 : <input type="test" name="usercop" size="50"/></p>
+                <p>E-Mail: <input type="email" name="userMail" size="50" value="user@mailServer"/></p>
+                <p>姓&nbsp;&nbsp;別 :<br/>
+                    <input type="radio" name="sex" value="1" checked/>男性
+                    <input type="radio" name="sex" value="0"/>女性
+                </p>
+                <p>年&nbsp;&nbsp;齡:<br/>
+                    <input type="radio" name="userage" value="age1" checked/>未滿20歲
+                    <input type="radio" name="userage" value="age2"/>20~29歲
+                    <input type="radio" name="userage" value="age3"/>30~39歲
+                    <input type="radio" name="userage" value="age4"/>40~49歲
+                    <input type="radio" name="userage" value="age5"/>50~59歲
+                    <input type="radio" name="userage" value="age6"/>60歲以上
+                </p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>手機使用經驗</legend>
+                <p>使用過那些廠牌手機?<br/>
+                    <input type="checkbox" name="userphone[]" value="htc" checked/>HTC
+                    <input type="checkbox" name="userphone[]" value="apple"/>Apple
+                    <input type="checkbox" name="userphone[]" value="sony"/>SONY
+                    <input type="checkbox" name="userphone[]" value="asus"/>ASUS
+                    <input type="checkbox" name="userphone[]" value="samsung"/>SAMSUNG
+                    <input type="checkbox" name="userphone[]" value="google"/>Google
+                </p>
+                <p>使用過那些廠牌手機?<br/>
+                    <select name="userNumber[]" multiple>
+                        <option value="中華電信" selected>中華電信</option>
+                        <option value="台灣大哥大">台灣大哥大</option>
+                        <option value="遠傳電信">遠傳電信</option>
+                        <option value="台灣之星">台灣之星</option>
+                        <option value="亞太電信">亞太電信</option>
+                        <option value="大眾電信">大眾電信</option>
+                    </select>
+                </p>
+                <p>使用手機時常遇到的問題?<br/>
+                    <textarea name="usertrouble" cols="50" rows="10"></textarea>
+                </p>
+            </fieldset>
+        </form>
+        <br/>
+        <input type="submit" value="提交"/>
+        <input type="reset" value="重新輸入"/>
+    </body>
+</html>

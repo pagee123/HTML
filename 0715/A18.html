@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+        [class^="col"]{
+            background-color: #e1e1e1;
+            border: 1px solid #c2c2c2;
+            height:100px;
+        }
+        .row{
+            background-color: #c2c2c2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
