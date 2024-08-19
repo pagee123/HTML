@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-2">
+            <form>
+                <label for="range_1" class="form-label">選項範圍(0~100)</label>
+                <input type="range" class="form-range" name="range_1" id="range_1"/>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+        </div>
+        <div class="row mb-2">
+            <form>
+                <label for="range_2" class="form-label">選項範圍(0~10)</label>
+                <input type="range" class="form-range" min="0" max="10" name="range_2" id="range_2"/>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

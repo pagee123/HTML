@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+        [class^=col]{
+            background-color: #e1e1e1;
+            border:1px solid #c1c1c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="m-2">
+                    <label class="control-label" for="select_1">選單A</label>
+                    <select class="form-select" name="select_1" id="select_1">
+                        <option value="1">小團圓</option>
+                        <option value="2">雷峰塔</option>
+                        <option value="3">愛相隨</option>
+                        <option value="4">半生緣</option>
+                        <option value="5">再回首</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <form class="m-2">
+                    <label class="control-label" for="select_2">選單B</label>
+                    <p>輸入複選 <kbd>Ctrl+ Mouse Click</kbd></p>
+                    <select class="form-select" name="select_2" id="select_2" multiple>
+                        <option value="1">小團圓</option>
+                        <option value="2">雷峰塔</option>
+                        <option value="3">愛相隨</option>
+                        <option value="4">半生緣</option>
+                        <option value="5">再回首</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col">
+                <form class="m-2">
+                    <label class="control-label mb-1" for="select_3">選單C_緊縮</label>
+                    <p>輸入複選 <kbd>Ctrl+ Mouse Click</kbd></p>
+                    <select class="form-select-sm" name="select_3" id="select_3" multiple>
+                        <option value="1">小團圓</option>
+                        <option value="2" selected>雷峰塔</option>
+                        <option value="3" selected>愛相隨</option>
+                        <option value="4">半生緣</option>
+                        <option value="5">再回首</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        
+        </form>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <style>
+        [class^=col]{
+            background-color: #e1e1e1;
+            border:1px solid #c1c1c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center">單選</h3>
+        <form>
+            <h3>最喜歡的神奇寶貝</h3>
+            <div class="form-check">
+                <label class="form-check-label" for="CK1">皮卡丘</label>
+                <input class="form-check-input" type="radio" name="RD1" id="CK1"/>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="CK2">傑尼龜 checked</label>
+                <input class="form-check-input" type="radio" name="RD1" id="CK2" checked/>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="CK3">卡比獸</label>
+                <input class="form-check-input" type="radio" name="RD1" id="CK3"/>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="CK4">快龍 disabled</label>
+                <input class="form-check-input" type="radio" name="RD1" id="CK4" disabled/>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="CK5">小火龍</label>
+                <input class="form-check-input" type="radio" name="RD1" id="CK5"/>
+            </div>
+            <hr/>
+            <h3>最喜歡的神奇寶貝 form-check-inline</h3>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="CKA">皮卡丘</label>
+                <input class="form-check-input" type="radio" name="RD2" id="CKA"/>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="CKB">傑尼龜 checked</label>
+                <input class="form-check-input" type="radio" name="RD2" id="CKB" checked/>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="CKC">卡比獸</label>
+                <input class="form-check-input" type="radio" name="RD2" id="CKC"/>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="CKD">快龍 disabled</label>
+                <input class="form-check-input" type="radio" name="RD2" id="CKD" disabled/>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="CKE">小火龍</label>
+                <input class="form-check-input" type="radio" name="RD2" id="CKE"/>
+            </div>
+            <hr/>
+            <h3>可愛貓頭鷹</h3>
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="check_1">你有看過貓頭鷹嗎?</label>
+                <input class="form-check-input" type="checkbox" name="check_1" id="check_1"/>
+            </div>
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="check_">你覺得貓頭鷹可愛嗎?</label>
+                <input class="form-check-input" type="checkbox" name="check_1" id="check" checked/>
+            </div>
+            <hr/>
+            <button class="btn btn-primary" type="submit">確認</button>
+        </form>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
