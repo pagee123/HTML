@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1</title>
+</head>
+<body>
+    <h1>HW1</h1>
+    <script>
+        
+        let tall = prompt("請輸入身高(cm): ");
+        let weight = prompt("請輸入體重(kg): ");
+        let bmi = weight/(tall/100)/(tall/100);
+        alert("你的BMI:"+parseFloat(bmi.toFixed(1)));
+        if(bmi<18.5){
+            alert("過輕");
+        }else if(bmi<=24){
+            alert("正常");
+        }else if(bmi<=27){
+            alert("過重");
+        }else if(bmi<=35){
+            alert("肥胖");
+        }else{
+            alert("極肥胖");
+        }
+    </script>
+</body>
+</html>
