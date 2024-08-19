@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="logo">
+                <img src="static/images/DWonline.png" width="180px" height="40px" alt="news"/>
+            </div>
+            <div class="toplogin">
+                <a href="#"><img src="static/images/LockOff.png" title="登出管理介面" width="32px" height="32px"/></a>
+            </div>
+        </div>
+        <div class="headings">
+            <h2>最新消息 - 管理介面</h2>
+        </div>
+        <div class="contentbox">
+            <form id="form1" name="form1">
+                <table width="90%" align="center">
+                    <tr>
+                        <th colspan="2" align="left" class="new">新增新聞</th>
+                    </tr>
+                    <tr>
+                        <td width="20%"><strong>分類</strong></td>
+                        <td>
+                            <select id="news_type" name="news_type">
+                                <option value="notice">公告</option>
+                                <option value="update">更新</option>
+                                <option value="activity">活動</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>標題</strong></td>
+                        <td><input type="text" name="news_subject" id="news_subject" size="45"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>編輯者</strong></td>
+                        <td><input type="text" name="news_editor" id="news_editor" size="45"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>內容</strong></td>
+                        <td><textarea name="news_content" id="news_content" cols="60" rows="15"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>審核</strong></td>
+                        <td>
+                            <input type="radio" id="news_ok" name="news_ok" value="yes"/>通過
+                            <input type="radio" id="news_ok" name="news_ok" value="check"/>審核中
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="submit" id="button_s" name="button_s" value="送出"/>
+                            <input type="reset" id="button_r" name="button_r" value="重設"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="footer">
+            &copy;Copyright 2024 Happy Day 新聞系統
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
