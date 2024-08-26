@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <h3>Bake</h3>
+    <script>
+        let status=bake(1000);
+        document.write(status+"<br/>");
+        function bake(degree){
+            let message;
+            if(degree>500){
+                message="I am not a furnace!";
+            }
+            else if(degree<20){
+                message="I am not a refrigerator!";
+            }
+            return message;
+        }
+    </script>
+</body>
+</html>

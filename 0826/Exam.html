@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+</head>
+<body style="background-color: rgb(255, 240, 240)">
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid" style="background-color: rgba(255, 255, 235)">
+            <a class="navbar-brand" href="#"><img src=k.png width="30px"/><span style="font-family: 標楷體;">花鹿旅遊</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_1"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">機票</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">房型</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">團體行程</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">國外旅遊</a>
+                            <a class="dropdown-item">台灣旅遊</a>
+                            <a class="dropdown-item">鐵道旅遊</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">門市地點</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="旅遊景點"/>
+                    <button class="btn btn-outline-info">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel" id="mycarousel" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./images/tour_01.jpg" class="d-block w-100" alt="蘭嶼">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>離島行程-蘭嶼</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/tour_02.jpg" class="d-block w-100" alt="澎湖七美">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>浮潛行程-澎湖七美</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/tour_03.jpg" class="d-block w-100" alt="阿里山">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>日出行程-阿里山</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/tour_04.jpg" class="d-block w-100" alt="湖口老街">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>超值行程-湖口老街</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="row me-2">
+            <div class="alert alert-danger ms-2 mb-2 mt-2">
+                <h5><a href="#" class="alert-link"><span class="strong">城府美食行!</span></a><i>  安平古堡，南科考古，懷古派對五日遊!</i></h5>
+            </div>
+            <div class="alert alert-primary ms-2 mb-2">
+                <h5><a href="#" class="alert-link">浮潛五星!</a><i>  大師隆成風景區、望夫石、星光住宿三日!</i></h5>
+            </div>
+            <div class="alert alert-success ms-2">
+                <h5><a href="#" class="alert-link">消暑一起購!</a><i>  台東蘭嶼五日遊快樂行</i></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-12 col-lg-3 col-md-6 mb-2">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="photo1.jpg"/>
+                    <div class="card-body">
+                        <h5 class="card-title">夢幻的樂園(一)</h5>
+                        <div class="card-text pb-3">迪士尼擴大了齊經營範圍，專注於戲劇、音樂及網路媒體！</div>
+                        <a href="#"><button type="button" class="btn btn-primary">相關資訊</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="photo2.jpg"/>
+                    <div class="card-body">
+                        <h5 class="card-title">開闊的景色(二)</h5>
+                        <div class="card-text pb-3">心情不好的時候，停下手中的活，看看外面的風景！</div>
+                        <a href="#"><button type="button" class="btn btn-primary">相關資訊</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="photo3.jpg"/>
+                    <div class="card-body">
+                        <h5 class="card-title">荷蘭的風車(三)</h5>
+                        <div class="card-text pb-3">荷蘭鹿特丹和阿姆斯特丹近郊，有很多風車的磨坊和造紙廠！</div>
+                        <a href="#"><button type="button" class="btn btn-primary">相關資訊</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="photo4.jpg"/>
+                    <div class="card-body">
+                        <h5 class="card-title">美麗的花朵(四)</h5>
+                        <div class="card-text pb-3">迎風搖曳的小野花在秋天的原野中綻放，令人感到心曠神怡！</div>
+                        <a href="#"><button type="button" class="btn btn-primary">相關資訊</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-2 ms-2">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <div class="row">
+                    <div class="col-1" style="background-color: rgb(70, 220, 210);"></div>
+                    <div class="col-11"><h3>代理產品-最方便的好幫手</h3></div>
+                </div>
+                <p>主要代理花鹿科技公司的單晶片與控制應用商品為主，適用於學習、百貨、餐飲業...。</p>
+                <ol>
+                    <li>MPC82G516</li>
+                    <li>STM32F072</li>
+                    <li>HT66</li>
+                    <li>Arduino</li>
+                </ol>
+            </div>
+            <div class="col-12 col-lg-5">
+                <a href="https://www.arduino.cc"><img src="uno_33.jpg" class="img-fluid"/></a>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12 col-md-5 order-lg-1 order-2 mt-2">
+                <div class="row">
+                    <div class="col-1" style="background-color: rgb(70, 220, 210);"></div>
+                    <div class="col-11"><h3>聯絡方式</h3></div>
+                </div>
+                <ul>
+                    <li class="mt-2">電話：02-23459876</li>
+                    <li class="mt-2">信箱：abc-tech@yahoo.com.tw</li>
+                    <li class="mt-2">地址：台北市中正區忠孝東路123號10樓之3</li>
+                    <li class="mt-2">粉專：https://www.facebook.com</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-7 order-lg-2 order-1">
+                <form>
+                    <div class="row">
+                        <div class="col-1" style="background-color: rgb(70, 220, 210);"></div>
+                        <div class="col-11"><h3>聯絡我們</h3></div>
+                    </div>
+                    <div>寄件人姓名</div>
+                    <input type="text" name="name" class="form-control">
+                    <div>信箱</div>
+                    <input type="email" name="email" class="form-control">
+                    <div>訊息</div>
+                    <textarea name="usermsg" cols="100" class="form-control"></textarea>
+                    <br/>
+                    <input type="submit" class="btn btn-primary" value="傳送"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <hr/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div>&copy;2024 花鹿旅遊公司<a href="Exam_1.html" class="text-warning">公司簡介</a></div>
+            </div>
+            <div class="col align-self-end">
+                <div class="text-end"><a href="#">Back to top</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
