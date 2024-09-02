@@ -1,0 +1,9 @@
+x=47.5
+print("x=",x)
+print("round(47.5)",round(x))
+x=48.5
+print("x=",x)
+print("round(48.5)",round(x))
+x=49.5
+print("x=",x)
+print("round(49.5)",round(x))

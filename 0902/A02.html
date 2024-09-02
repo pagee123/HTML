@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <script>
+        function prequal(car)
+        {
+            if(car.mileage>50000)
+            {
+                return false;
+            } else if(car.year<2018){
+                return false;
+            }
+            return true;
+        }
+        let taxi={
+            make: "FORD",
+            model: "taxi",
+            year: 2017,
+            color: "yellow",
+            passengers: 4,
+            mileage: 85538
+        };
+
+        let privateCar={
+            make: "TOYOTA",
+            model: "sedan",
+            year: 2019,
+            color: "while",
+            passengers: 4,
+            mileage: 28775
+        };
+
+        let car=privateCar
+        let worthALook=prequal(car);
+        if(worthALook)
+        {
+            document.write("You go to check out this "+car.make+" "+car.color+" "+car.model+"<br/>");
+        }else{
+            document.write("You should really pass on the "+car.make+" "+car.color+" "+car.model+"<br/>");
+        }
+    </script>
+    
+</body>
+</html>
